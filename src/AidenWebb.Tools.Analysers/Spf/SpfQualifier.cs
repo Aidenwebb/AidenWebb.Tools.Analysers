@@ -31,4 +31,12 @@ public enum SpfQualifier
     /// Indicates the domain does not assert a definitive policy for this sender.
     /// </summary>
     Neutral,
+    /// <summary>
+    /// A transient error usually due to DNS configuration issues.
+    /// </summary>
+    TempError,
+    /// <summary>
+    /// A permanent error usually due to SPF record syntax or formatting errors.
+    /// </summary>
+    PermError,
 }
